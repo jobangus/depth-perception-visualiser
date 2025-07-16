@@ -24,6 +24,7 @@
 		325536062E277A26003E3742 /* depth-perception-visualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "depth-perception-visualizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3255360A2E277A26003E3742 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3255361B2E277A28003E3742 /* depth-perception-visualizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "depth-perception-visualizerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B7D7FA2E27885D0046C112 /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -78,6 +79,7 @@
 				325536092E277A26003E3742 /* Packages */,
 				3255361E2E277A28003E3742 /* depth-perception-visualizerTests */,
 				325536072E277A26003E3742 /* Products */,
+				32B7D7FA2E27885D0046C112 /* Untitled.swift */,
 			);
 			sourceTree = "<group>";
 		};

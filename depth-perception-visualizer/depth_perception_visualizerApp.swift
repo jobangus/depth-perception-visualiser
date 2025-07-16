@@ -11,7 +11,11 @@ import SwiftUI
 struct depth_perception_visualizerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+        }
+
+        ImmersiveSpace(id: "SceneReconstruction") {
+            SceneReconstructionView()
         }
     }
 }
