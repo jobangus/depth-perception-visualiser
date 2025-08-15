@@ -10,7 +10,14 @@ import RealityKit
 import ARKit
 
 struct SceneReconstructionView: View {
+    @ObservedObject var appState: AppState
+    
+    
+    @State private var meshGenerator: MeshAnchorGenerator?
+    
+    
     var body: some View {
+
         RealityView { content in
             let root = Entity()
             
@@ -18,8 +25,23 @@ struct SceneReconstructionView: View {
             
             let sceneReconstruction = SceneReconstructionProvider()
             
+            let planeData = PlaneDetectionProvider(alignments: [.horizontal, .vertical])
+            
+            do{
+                meshGenerator = try await MeshAnchorGenerator(root: root, appState: appState)
+            } catch {
+                print("Failed to initialize MeshAnchorGenerator: \(error)")
+            }
+            
             Task {
-                let generator = MeshAnchorGenerator(root: root)
+                
+                guard let generator = meshGenerator else {
+                                    print("MeshAnchorGenerator is not initialized.")
+                                    return
+                                }
+                    
+                
+              
                 
                 guard SceneReconstructionProvider.isSupported else {
                     print("SceneReconstructionProvider is not supported on this device.")
@@ -27,9 +49,15 @@ struct SceneReconstructionView: View {
                     
                 }
                 
+                guard PlaneDetectionProvider.isSupported else {
+                    print("PlaneDetectionProvider is not supported on this device.")
+                    return
+                    
+                }
+                
                 do {
                     // start the ARKit Session and run the SceneReconstructionProvider
-                    try await arSession.run([sceneReconstruction    ])
+                    try await arSession.run([sceneReconstruction])
                     
                 } catch let error as ARKitSession.Error {
                     print("Encountered an error while running providers: \(error.localizedDescription)")

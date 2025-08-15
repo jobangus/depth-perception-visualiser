@@ -1,0 +1,68 @@
+{
+  "441CC28F-4EA7-4073-AAF6-8D4C2C299794" : {
+    "objectMetadataList" : [
+      [
+        "441CC28F-4EA7-4073-AAF6-8D4C2C299794",
+        "Root",
+        "DefaultMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "441CC28F-4EA7-4073-AAF6-8D4C2C299794",
+        "Root",
+        "EasyOutlineMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "441CC28F-4EA7-4073-AAF6-8D4C2C299794",
+        "Root",
+        "OutlineMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "441CC28F-4EA7-4073-AAF6-8D4C2C299794",
+        "Root",
+        "ChromaDepthMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "441CC28F-4EA7-4073-AAF6-8D4C2C299794",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "441CC28F-4EA7-4073-AAF6-8D4C2C299794",
+        "Root",
+        "Cone"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "441CC28F-4EA7-4073-AAF6-8D4C2C299794",
+        "Root",
+        "TopographicMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  }
+}

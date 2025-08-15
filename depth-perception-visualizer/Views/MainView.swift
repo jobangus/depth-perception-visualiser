@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import RealityKit
+import RealityKitContent
 
 struct MainView: View {
     /// The environment value to get the instance of the `OpenImmersiveSpaceAction` instance.
-    @Environment(\.openImmersiveSpace) var openImmersiveSpace
-
+    @Environment(\.openImmersiveSpace) var openImmersiveSpace	
     var body: some View {
         // Display a line of text and
         // open a new `ImmersiveSpace` environment.
@@ -20,6 +21,9 @@ struct MainView: View {
                     await openImmersiveSpace(id: "SceneReconstruction")
                 }
             }
+        
+        
+        
     }
 }
 
