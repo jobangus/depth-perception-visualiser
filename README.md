@@ -15,7 +15,8 @@ People with Parinaud Syndrome experience:
 ## What we have so far
 Depth Perception Visualizer - A ball cursor tracks depth as user navigates through an open space. 
 
-https://github.com/user-attachments/assets/1b30ceca-6344-48fa-9b31-f8f3b3849037
+[![Watch the video](https://img.youtube.com/vi/YWLuklOmGeI/hqdefault.jpg)](https://www.youtube.com/embed/YWLuklOmGeI)
+
 
 
 
